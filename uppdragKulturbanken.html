@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kulturbanken</title>
+        <script src="barnMIK.js"></script>
+        <link href="barnMIK.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="greenBackground">Riktiga pengar?</h1>
+        <p>Gå till bibliotekets huvudentré som finns på bottenvåningen. Där hittar du Kulturbanken. Här kan du bland annat låna instrument, maskeradkläder och sällskapsspel helt gratis.</p>
+        <img alt="Kulturbankens egna pengar som inte ser ut som vanliga pengar" src="kulturbankspengar.jpg">
+        
+        <p>Kapten Luring tänkte handla med Kulturbankens pengar på en vanlig affär. Kaptenen ska köpa äpplen för pengarna. Går det?</p>
+        
+        <form name="myForm" action="./uppdragKulturbankenKlart.html" method="get" autocomplete="off" onsubmit="return validateKulturbanken()">
+            <p>
+                <input type="radio" id="ja" value="ja" name="money"><label for="ja">Ja, självklart!</label><br>
+                <input type="radio" id="nej" value="nej" name="money"><label for="nej">Nej det går inte.</label><br>
+                <input type="radio" id="ibland" value="ibland" name="money"><label for="ibland">Bara när affären har stängt.</label><br><br>
+            <button type="submit">Skicka</button></p>
+            <p id="errorMessage"></p>
+        </form>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,117 @@
+body {
+    padding: 1em;
+}
+
+.styledLink {                      
+    padding: 0.5em;
+    border: 0.1em solid black;
+    border-radius: 1em;
+    background-color: #cde7ca;
+    color: black; 
+    text-decoration: none;
+}
+
+#stampsHeader {     /*Huvudrubriken på första sidan. */
+    background-color: #ffc818;
+    padding: 0.3em;
+    font-size: 1.3em;
+    margin-top: 1.6em;
+}
+
+.bildUpphov {           /*Bildtexten under bilderna Fredrik skapat */
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 0.1em;
+}
+
+.listaUppdrag {       /*Stylar div-elementen/uppdragen på sidan uppdragen.html */
+    margin-bottom: 2em; 
+}
+
+.bildUppdrag {         /*Stylar bilderna som finns på sidan uppdragen.html  */
+    width: 100%;
+}
+
+.linkUppdrag {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: Archivo, serif;
+    font-size: 1.8em;
+}
+
+h2 {
+    text-align: center;
+    font-family: Archivo, serif;
+    font-size: 1.4em;   
+}
+
+p {
+    font-family: Roboto, serif;
+    font-size: 1em;
+}
+
+.centeredLinks {             /*Centrerar länkarna, länkarna måste ligga i ett annat element, som nav eller div */
+    display: flex;
+    justify-content: center;    
+}
+
+img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.greenBackground {   /*Bakgrunden till rubriken på de olika uppdragen.*/
+    background-color: #cde7ca;
+    padding: 0.5em;
+}
+
+button {
+    border: 0.1em solid black;  
+    background-color: #cde7ca;
+    padding: 0.3em;
+}
+
+.successMessage {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.stars {        /*De gula stjärnorna som finns på vissa sidor. */
+    width: 15%;
+}
+
+.containerStars {      /*Placerar de gula stjärnorna centrerat på sidan. */
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Nedan finns media queries för att ändra utseendet om låntagarna använder en surfplatta eller en dator. 
+Den första är för surfplattor och den andra är för datorer. Koden placerar alla element centrerat i mitten.*/
+
+@media (min-width: 500px) {
+    body {
+        display:block;
+        height: auto;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    body {
+        display:block;
+        height: auto;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

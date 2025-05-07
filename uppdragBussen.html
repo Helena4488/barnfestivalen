@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Biblioteksbussen</title>
+        <script src="barnMIK.js"></script>
+        <link href="barnMIK.css" rel="stylesheet">
+    </head>
+    <body>  
+        <h1 class="greenBackground">Biblioteksbussen</h1>
+        <p>På Stora torget står bibliotekets bokbuss parkerad. Ta dig till biblioteksbussen!</p>
+        <img alt="Biblioteksbussens front" src="biblioteksbussenFronten2.jpg">
+        <p>Kapten Luring säger att han har skrivit ett meddelande på biblioteksbussen. Gå till biblioteksbussen, och titta utanpå den.</p>
+        <p>Vad står det i pratbubblan framme vid busschauffören?</p>
+        
+        
+        <form name="myForm" action="./uppdragBussenKlart.html" method="get" autocomplete="off" onsubmit="return validateBussen()">
+            <input type="radio" id="bibblan" name="bussen" value="bibblan"><label for="bibblan">Vinka om du gillar bibblan :&rpar; </label><br>
+            <input type="radio" id="kaptenluring" name="bussen" value="kaptenluring"><label for="kaptenluring">Vinka om du gillar Kapten Luring :&rpar;</label><br>
+            <input type="radio" id="lurig" name="bussen" value="lurig"><label for="lurig">Vinka om du är lurig :&rpar;</label><br><br>
+            <button type="submit">Skicka</button>
+            <p id="errorMessage"></p>
+        </form>
+
+ 
+
+    </body>
+
+</html>

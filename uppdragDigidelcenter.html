@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Falska bilder</title>
+        <script src="barnMIK.js"></script>
+        <link href="barnMIK.css" rel="stylesheet">
+    </head>
+    <body>        
+        <h1 class="greenBackground">Falska bilder</h1>
+        <p>Gå till Digidelcenter som finns på bottenvåningen på fackbiblioteket. Nära informationsdisken hittar du tre bilder till detta uppdrag.</p>
+        <p>Kapten Luring har spridit falska bilder. Luring har använt AI för att förfalska två av bilderna.</p>
+        <img alt="Kapten Luring sitter framför datorn och han ser ut att hålla på med något bus" src="kaptenLuringDator3.jpg">
+        <p class="bildUpphov">Illustration Fredrik Pärn Eklöv</p>
+        <p>Vilken bild är ett verkligt fotografi av Västerås?</p>
+        <p>Ange om det är bild A, B eller C.</p>
+        <form name="myForm" action="./uppdragDigidelCenterKlart.html" method="get" autocomplete="off" onsubmit="return validateDigidelcenter()">
+            <p><label>Svar: <input type="text" name="answer"></label>
+            <button type="submit">Skicka</button></p>
+            <p id="errorMessage"></p>
+        </form>
+
+ 
+
+    </body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Spökrummet</title>
+        <script src="barnMIK.js"></script>
+        <link href="barnMIK.css" rel="stylesheet">
+    </head>
+    <body>
+        <p class="successMessage">Rätt svar! Två uppdrag till så är stämplarna dina!</p>
+        <div class="containerStars">
+            <div class="stars">
+                <svg height="53" width="53" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="25,2 10,50 47,20 2,20 40,50" style="fill:#ffc818;"/> 
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+            <div class="stars">
+                <svg height="53" width="53" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="25,2 10,50 47,20 2,20 40,50" style="fill:#ffc818;"/> 
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>   
+            <div class="stars">
+                <svg height="53" width="53" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="25,2 10,50 47,20 2,20 40,50" style="fill:#ffc818;"/> 
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>         
+        </div>
+        <h1 class="greenBackground">Spökar det på biblioteket?</h1>
+        <p>Fortsätt över till fackbiblioteket.</p>
+        <p>Kapten Luring säger att det finns ett mörkt spökrum på övervåningen. Rummet har gröna gardiner och ligger till vänster om hissen. Men är det verkligen ett spökrum? </p>
+        <img alt="Ett mörkt rum med gröna gardiner" src="raritetskabinettet.jpg">
+        <form name="myForm" action="./uppdragTidskrifter.html" method="get" autocomplete="off" onsubmit="return validateRaritetskabinettet()">
+            <p>Vad finns i rummet?</p>
+            <input type="radio" id="witch" name="room" value="witch"><label for="witch">En elak häxa</label><br>
+            <input type="radio" id="ghost" name="room"  value="ghost"><label for="ghost">Spöken - det är ett spökrum!</label><br>
+            <input type="radio" id="cabinet" name="room" value="cabinet"><label for="cabinet">Gamla böcker och fotografier</label><br><br>
+            <button type="submit">Skicka</button>
+            <p id="errorMessage"></p>
+        </form>
+
+    </body>
+
+</html>

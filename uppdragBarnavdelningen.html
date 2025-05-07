@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Barnavdelningen</title>
+        <script src="barnMIK.js"></script>
+        <link href="barnMIK.css" rel="stylesheet">
+    </head>
+    <body>        
+        <h1 class="greenBackground">Pippi Långstrump</h1>
+        <p>Gå till barnavdelningen som finns på bottenvåningen vid huvudentrén.</p>
+        <p>Nära informationsdisken hittar du några böcker som handlar om Pippi Långstrump.</p>
+        <img alt="Fotografi av bokomslaget till boken om Pippi Långstrump" src="pippi.jpg">
+        
+        <p>Kapten Luring säger att det är han som är Pippis bästa vän. Men stämmer det?</p>
+        <p>Vem är Pippis bästa vän?</p>
+        <form name="myForm" action="./uppdragBarnavdelningenKlart.html" method="get" autocomplete="off" onsubmit="return validateBarnavdelningen()">
+            <input type="radio" id="prussiluskan" name="friend" value="prussiluskan"><label for="prussiluskan">Prussiluskan</label><br>
+            <input type="radio" id="kaptenluring" name="friend" value="kaptenluring"><label for="kaptenluring">Kapten Luring</label><br>
+            <input type="radio" id="tommyAnnika" name="friend" value="tommyAnnika"><label for="tommyAnnika">Tommy och Annika</label><br><br>
+            <button type="submit">Skicka</button>
+            <p id="errorMessage"></p>
+        </form>
+
+ 
+
+    </body>
+
+</html>

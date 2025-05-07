@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tidskrifter</title>
+        <script src="barnMIK.js"></script>
+        <link href="barnMIK.css" rel="stylesheet">
+    </head>
+    <body>
+        <p class="successMessage">Rätt svar! Nu är det bara ett uppdrag kvar sen är stämplarna dina!</p>
+        <div class="containerStars">
+            <div class="stars">
+                <svg height="53" width="53" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="25,2 10,50 47,20 2,20 40,50" style="fill:#ffc818;"/> 
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+            <div class="stars">
+                <svg height="53" width="53" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="25,2 10,50 47,20 2,20 40,50" style="fill:#ffc818;"/> 
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>   
+            <div class="stars">
+                <svg height="53" width="53" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="25,2 10,50 47,20 2,20 40,50" style="fill:#ffc818;"/> 
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>         
+        </div>
+        <h1 class="greenBackground">Tidningar och tidskrifter</h1>
+        <p>Kapten Luring säger att det inte finns några tidningar och tidskrifter på biblioteket, bara gamla dammiga böcker. Gå ner till bottenvåningen på fackbiblioteket och kolla om det stämmer!</p>
+        <img alt="Olika tidningar och tidskrifter" src="tidningar.jpg">
+        <p>Kapten Luring påstår att tidskriften ”Offside” handlar om ishockey.</p>
+        <form name="myForm" action="./uppdragFackKlart.html" method="get" autocomplete="off" onsubmit="return validateTidskrift()">
+            <p>Vilken sport handlar tidskriften ”Offside” om?</p>
+            <input type="radio" id="fotboll" name="sport" value="fotboll"><label for="fotboll">Fotboll</label><br>
+            <input type="radio" id="bandy" name="sport" value="bandy"><label for="bandy">Bandy</label><br>
+            <input type="radio" id="ishockey" name="sport" value="ishockey"><label for="ishockey">Ishockey</label><br><br>
+            <button type="submit">Skicka</button></p>
+            <p id="errorMessage"></p>
+        </form>
+
+    </body>
+
+</html>

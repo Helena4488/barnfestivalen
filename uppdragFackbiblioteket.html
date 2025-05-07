@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Skeppen</title>
+        <script src="barnMIK.js"></script>
+        <link href="barnMIK.css" rel="stylesheet">
+    </head>
+    <body>
+        <p class="successMessage">Nu kommer du få <strong>tre</strong> uppdrag. Du kan få <strong>två</strong> stämplar om du klarar av alla tre uppdragen.</p>
+        <h1 class="greenBackground">Skeppen</h1>
+        <p>Gå till gångbron som finns på övervåningen. I gången finns det olika skepp.</p>
+        <p>Kapten Luring säger att det är han som har byggt skeppen. Men stämmer det verkligen?</p>
+        <img alt="En båt byggd i trä" src="boatCloseUp.jpg">
+        <form name="myForm" action="./uppdragRaritetskabinettet.html" method="get" autocomplete="off" onsubmit="return validateSkeppen()">
+            <p>Vad heter personen som byggt skeppen?</p>
+            <input type="radio" id="kapten" name="boats" value="kapten"><label for="kapten">Kapten Luring</label><br>
+            <input type="radio" id="andersson" name="boats" value="andersson"><label for="andersson">Ture Albert Andersson</label><br>
+            <input type="radio" id="svensson" name="boats"  value="svensson"><label for="svensson">Peter Tomas Svensson</label><br><br>
+            <button type="submit">Skicka</button>
+            <p id="errorMessage"></p>
+        </form>
+
+    </body>
+
+</html>
