@@ -110,7 +110,7 @@ Den första är för surfplattor och den andra är för datorer. Koden placerar 
     body {
         display:block;
         height: auto;
-        width: 30%;
+        width: 45%;
         margin-left: auto;
         margin-right: auto;
     }
